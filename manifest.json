@@ -1,6 +1,7 @@
 {
   "name": "MyDramaListPlus",
   "version": "1.0",
+  "author": "zvbt",
   "description": "MyDramaList but better. This project is still in early development if you encounter any bugs or errors please open an issue at https://github.com/zvbt/MyDramalistPLUS",
   "action": {
     "default_icon": "icons/icon.png"
@@ -12,7 +13,7 @@
   "content_scripts": [
     {
       "js": ["content.js"],
-      "matches": ["https://mydramalist.com/*"]
+      "matches": ["https://*.mydramalist.com/*"]
     }
   ],
   "manifest_version": 3,
