@@ -1,38 +1,47 @@
+let version = document.querySelector("span.beta4.label.label-xs.danger");
+version.innerHTML += " & MDL+";
+
 document.addEventListener("readystatechange", (event) => {
-  let version = document.querySelector("span.beta4.label.label-xs.danger");
-  version.innerHTML += " & MDL+";
-
-  let userProfile = document.querySelector(
-    "#app > div:nth-child(2) > div.app-header.navbar-xs.black.box-shadow > div > div > ul > li.nav-item.header-dropdown.mdl-dropdown.dropdown > div > div > a:nth-child(3)"
-  );
-  let userLink = userProfile.href;
-  const userName = userLink.split("/").pop();
-  let langAlert =
-    "The extension MyDramaListPLUS is still in beta and work only with the english version of MyDramaList please use: \nhttps://mydramalist/com";
-
   if (event.target.readyState === "complete") {
-    const newListItem = document.createElement("li");
-    newListItem.classList.add("nav-item", "dropdown");
+    try {
+      let userProfile = document.querySelector(
+        "#app > div:nth-child(2) > div.app-header.navbar-xs.black.box-shadow > div > div > ul > li.nav-item.header-dropdown.mdl-dropdown.dropdown > div > div > a:nth-child(3)"
+      );
+      let userLink = userProfile.href;
+      const userName = userLink.split("/").pop();
+      const newListItem = document.createElement("li");
+      newListItem.classList.add("nav-item", "dropdown");
 
-    const newLink = document.createElement("a");
-    newLink.href = "/dramalist/" + userName;
-    newLink.classList.add("nav-link");
+      const newLink = document.createElement("a");
+      newLink.href = "/dramalist/" + userName;
+      newLink.classList.add("nav-link");
 
-    const newSpan = document.createElement("span");
-    newSpan.classList.add("nav-text");
-    newSpan.textContent = "My Watchlist";
+      const newSpan = document.createElement("span");
+      newSpan.classList.add("nav-text");
+      newSpan.textContent = "My Watchlist";
 
-    newLink.appendChild(newSpan);
+      newLink.appendChild(newSpan);
 
-    newListItem.appendChild(newLink);
+      newListItem.appendChild(newLink);
 
-    const navBar = document.querySelector(
-      "ul.nav.navbar-nav.pull-left.nav-active-border.b-blue"
-    );
-    navBar.appendChild(newListItem);
+      const navBar = document.querySelector(
+        "ul.nav.navbar-nav.pull-left.nav-active-border.b-blue"
+      );
+      navBar.appendChild(newListItem);
+    } catch (error) {
+      if (window.location.href === "https://mydramalist.com/signin") {
+      } else {
+        window.location.href = "https://mydramalist.com/signin";
+        alert(
+          "You must be logged in to use MyDramaListPLUS.\nYou will be redirected to the login/registration page once you click yes."
+        );
+      }
+    }
   }
 });
 
+let langAlert =
+  "The extension MyDramaListPLUS is still in beta and work only with the english version of MyDramaList please use: \nhttps://mydramalist/com";
 function checklang() {
   if (window.location.href.match("https://fr.mydramalist.com")) {
     alert(langAlert);
