@@ -11,7 +11,7 @@ document.addEventListener("readystatechange", (event) => {
           "#content > div > div.container-fluid.profile-container > div > div.col-lg-8.col-md-8 > div.box > div.box-header.box-navbar > div.profile-header.mdl-component > div.hidden-sm-down > h1"
         );
 
-        cyadine.innerHTML = `<span style="font-size: 18px;cursor: pointer;background-color: #6b03fc;color: hsla(0,0%,100%,0.87);padding: 2px 4px;text-align: center;border-radius: 5px;" onClick='window.open("https://github.com/zvbt", "_blank");'>MDL+</span> Cyadine`;
+        cyadine.innerHTML = `<span style="font-size: 18px;cursor: pointer;background-color: #6b03fc;color: hsla(0,0%,100%,0.87);padding: 2px 4px;text-align: center;border-radius: 5px;" onClick='window.open("https://github.com/zvbt/MyDramalistPLUS", "_blank");'>MDL+</span> Cyadine`;
       }
 
       let userProfile = document.querySelector(
