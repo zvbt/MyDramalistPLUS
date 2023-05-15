@@ -6026,7 +6026,6 @@ var ads = [
   "*://*.staatefarm.com/*",
   "*://*.stack-sonar.com/*",
   "*://*.stackadapt.com/*",
-  "*://*.stackoverflow.com/*",
   "*://*.stacksocialcontent.com/*",
   "*://*.staffingourschools.com/*",
   "*://*.stagehosts.com/*",
