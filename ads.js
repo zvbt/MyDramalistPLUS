@@ -14613,7 +14613,6 @@ var ads = [
   "*://*.synonymoussticks.com/*",
   "*://*.bawafx.com/*",
   "*://*.carta.com/*",
-  "*://*.t.co/*",
   "*://*.superdrug.com/*",
   "*://*.insigit.com/*",
   "*://*.irtyd.com/*",
