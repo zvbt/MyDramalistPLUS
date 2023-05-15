@@ -8,7 +8,7 @@ MDL+ is a chrome extension to make [MyDramaList.com](https://mydramalist.com/) f
 - [x] Check if user is logged in
 - [ ] Force darkmode
 - [ ] Rounded ui
-- [ ] Completely remove ads
+- [ ] Completely remove ads & tracking urls
 - [ ] Open stream links
 
 Made with ❤ by zvbt
