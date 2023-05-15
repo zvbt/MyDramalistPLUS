@@ -11324,7 +11324,6 @@ var ads = [
   "*://*.moviego.org/*",
   "*://*.moviesdb.org/*",
   "*://*.moviesyug.org/*",
-  "*://*.mozilla.org/*",
   "*://*.mpmoaa.org/*",
   "*://*.mppdocs.org/*",
   "*://*.mthermon.org/*",
