@@ -5978,7 +5978,6 @@ var ads = [
   "*://*.sportsgames247.com/*",
   "*://*.sportslut.com/*",
   "*://*.sportyfy.com/*",
-  "*://*.spotify.com/*",
   "*://*.spotxcdn.com/*",
   "*://*.spotxchange.com/*",
   "*://*.spribd.com/*",
