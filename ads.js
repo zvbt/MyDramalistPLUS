@@ -15376,7 +15376,6 @@ var ads = [
   "*://*.popcounter.com/*",
   "*://*.popmatters.com/*",
   "*://*.popmarker.com/*",
-  "*://*.pornhub.com/*",
   "*://*.porntraff.com/*",
   "*://*.premiumpass.com/*",
   "*://*.promptfile.com/*",
