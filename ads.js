@@ -4554,7 +4554,6 @@ var ads = [
   "*://*.nesquic-club.com/*",
   "*://*.netcollins.com/*",
   "*://*.netdear.com/*",
-  "*://*.netflix.com/*",
   "*://*.netflixnetflix.com/*",
   "*://*.netglog.com/*",
   "*://*.nethousesprices.com/*",
