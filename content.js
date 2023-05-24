@@ -49,30 +49,10 @@ document.addEventListener("readystatechange", (event) => {
   }
 });
 
-let langAlert =
-  "The extension MyDramaListPLUS is still in beta and work only with the english version of MyDramaList please use: \nhttps://mydramalist/com";
-function checklang() {
-  if (window.location.href.match("https://fr.mydramalist.com")) {
-    alert(langAlert);
-  }
+let langAlert="The extension MyDramaListPLUS is still in beta and work only with the english version of MyDramaList.\nAfter closing this dialog you will be redirected to\nhttps://mydramalist/com";function checklang(){window.location.href.match("https://fr.mydramalist.com")&&(alert(langAlert),window.location.href="https://mydramalist.com/"),window.location.href.match("https://es.mydramalist.com")&&(alert(langAlert),window.location.href="https://mydramalist.com/"),window.location.href.match("https://it.mydramalist.com")&&(alert(langAlert),window.location.href="https://mydramalist.com/"),window.location.href.match("https://nl.mydramalist.com")&&(alert(langAlert),window.location.href="https://mydramalist.com/"),window.location.href.match("https://pt.mydramalist.com")&&(alert(langAlert),window.location.href="https://mydramalist.com/"),window.location.href.match("https://br.mydramalist.com")&&(alert(langAlert),window.location.href="https://mydramalist.com/"),window.location.href.match("https://ro.mydramalist.com")&&(alert(langAlert),window.location.href="https://mydramalist.com/")}
 
-  if (window.location.href.match("https://es.mydramalist.com")) {
-    alert(langAlert);
+document.addEventListener("readystatechange", (event) => {
+  if (event.target.readyState === "complete") {
+    checklang();
   }
-  if (window.location.href.match("https://it.mydramalist.com")) {
-    alert(langAlert);
-  }
-  if (window.location.href.match("https://nl.mydramalist.com")) {
-    alert(langAlert);
-  }
-  if (window.location.href.match("https://pt.mydramalist.com")) {
-    alert(langAlert);
-  }
-  if (window.location.href.match("https://br.mydramalist.com")) {
-    alert(langAlert);
-  }
-  if (window.location.href.match("https://ro.mydramalist.com")) {
-    alert(langAlert);
-  }
-}
-setInterval(checklang, 5000);
+});
