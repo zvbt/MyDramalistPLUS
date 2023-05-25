@@ -9,7 +9,7 @@
   },
   "content_scripts": [
     {
-      "css": [],
+      "css": ["style.css"],
       "js": ["content.js"],
       "matches": ["https://*.mydramalist.com/*"]
     }

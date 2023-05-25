@@ -1,0 +1,79 @@
+.slideout-panel {
+  /* background-image: url(""); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.carousel-articles {
+  display: none !important;
+}
+.m-t {
+  display: none !important;
+}
+.box {
+  border-radius: 20px;
+  /* background-color: #171717cc !important;
+  backdrop-filter: blur(10px) !important; */
+}
+
+.cover {
+  border-radius: 20px !important;
+  background-color: transparent !important;
+}
+.box-grid-section {
+  border-radius: 20px;
+  margin-bottom: 1em;
+  /* background-color: #171717cc !important;
+  backdrop-filter: blur(10px) !important; */
+}
+.film-cover {
+  border-radius: 20px !important;
+  background-color: transparent !important;
+}
+
+.img-responsive {
+  border-radius: 20px !important;
+  background-color: transparent !important;
+}
+.image {
+  border-radius: 20px !important;
+  background-color: transparent !important;
+}
+
+.navbar {
+  border-radius: 20px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  display: flex !important;
+  position: absolute !important;
+  margin-top: 1em;
+  background-color: #00578d;
+}
+
+.primary {
+  /* background-color: #171717cc !important;
+  backdrop-filter: blur(10px) !important; */
+  border-radius: 20px;
+}
+/* #dramalist .table thead th, .style-default .table thead th{
+   background-color: #171717cc !important;
+  backdrop-filter: blur(10px) !important;
+} */
+.input-group {
+  margin-left: 1em;
+}
+
+.nav-notifications {
+  display: none;
+}
+
+.header-user {
+  display: block;
+  margin-left: -3em;
+  margin-right: 3em;
+}
+
+#mdl-lang {
+  opacity: 0;
+}
