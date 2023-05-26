@@ -1,20 +1,20 @@
 .slideout-panel {
-  /* background-image: url(""); */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background-image: url("https://rare-gallery.com/uploads/posts/120728-blur-gradient-vibrant-vivid-colorful-backgrounds-hd-4k-5k.png");
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
 }
 
 .carousel-articles {
   display: none !important;
 }
-.m-t {
+.col-lg-4 {
   display: none !important;
 }
 .box {
   border-radius: 20px !important;
-  /* background-color: #171717cc !important;
-  backdrop-filter: blur(10px) !important; */
+  background-color: #171717cc !important;
+  backdrop-filter: blur(10px) !important;
 }
 
 .cover {
@@ -24,8 +24,8 @@
 .box-grid-section {
   border-radius: 20px !important;
   margin-bottom: 1em !important;
-  /* background-color: #171717cc !important;
-  backdrop-filter: blur(10px) !important; */
+  background-color: #171717cc !important;
+  backdrop-filter: blur(10px) !important;
 }
 .film-cover {
   border-radius: 20px !important;
@@ -49,19 +49,24 @@
   position: absolute !important;
   margin-top: 1em !important;
   background-color: #00578d !important;
+  width: 1104px !important;
+  margin-left: 1em !important;
 }
-
+.col-lg-8 {
+  width: 1126px !important;
+}
 .primary {
-  /* background-color: #171717cc !important;
-  backdrop-filter: blur(10px) !important; */
+  background-color: #171717cc !important;
+  backdrop-filter: blur(10px) !important;
   border-radius: 20px !important;
 }
-/* #dramalist .table thead th, .style-default .table thead th{
-   background-color: #171717cc !important;
+#dramalist .table thead th,
+.style-default .table thead th {
+  background-color: #171717cc !important;
   backdrop-filter: blur(10px) !important;
-} */
+}
 .input-group {
-  margin-left: 1em !important;
+  margin-left: 2em !important;
 }
 
 .nav-notifications {
@@ -70,10 +75,17 @@
 
 .header-user {
   display: block !important;
-  margin-left: -3em !important;
+  margin-left: -1em !important;
   margin-right: 3em !important;
 }
 
 #mdl-lang {
-  opacity: 0 !important;
+  display: none !important;
+}
+
+.m-t {
+  margin-top: 16px !important;
+}
+.hidden-sm-down {
+  display: none !important;
 }
