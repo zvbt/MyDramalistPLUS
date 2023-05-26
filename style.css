@@ -1,5 +1,5 @@
 .slideout-panel {
-  background-image: url("https://rare-gallery.com/uploads/posts/120728-blur-gradient-vibrant-vivid-colorful-backgrounds-hd-4k-5k.png");
+  /* background-image: url("https://i.imgur.com/og3l53C.jpeg"); */
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
   background-size: cover !important;
@@ -13,8 +13,8 @@
 }
 .box {
   border-radius: 20px !important;
-  background-color: #171717cc !important;
-  backdrop-filter: blur(10px) !important;
+  /* background-color: #171717cc !important;
+  backdrop-filter: blur(10px) !important; */
 }
 
 .cover {
@@ -24,8 +24,8 @@
 .box-grid-section {
   border-radius: 20px !important;
   margin-bottom: 1em !important;
-  background-color: #171717cc !important;
-  backdrop-filter: blur(10px) !important;
+  /* background-color: #171717cc !important;
+  backdrop-filter: blur(10px) !important; */
 }
 .film-cover {
   border-radius: 20px !important;
@@ -56,15 +56,15 @@
   width: 1126px !important;
 }
 .primary {
-  background-color: #171717cc !important;
-  backdrop-filter: blur(10px) !important;
+  /* background-color: #171717cc !important;
+  backdrop-filter: blur(10px) !important; */
   border-radius: 20px !important;
 }
-#dramalist .table thead th,
+/* #dramalist .table thead th,
 .style-default .table thead th {
   background-color: #171717cc !important;
   backdrop-filter: blur(10px) !important;
-}
+} */
 .input-group {
   margin-left: 2em !important;
 }
