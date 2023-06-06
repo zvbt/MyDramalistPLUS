@@ -86,3 +86,18 @@
 .m-t {
   margin-top: 16px !important;
 }
+.m-b {
+  z-index: 999;
+}
+#content
+  > div
+  > div.container-fluid.profile-container
+  > div
+  > div.col-lg-8.col-md-8
+  > div.box
+  > div.box-header.box-navbar
+  > div.profile-header.mdl-component
+  > div.hidden-sm-down
+  > h1 {
+  display: none !important;
+}
