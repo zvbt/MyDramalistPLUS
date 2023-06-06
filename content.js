@@ -30,6 +30,26 @@ document.addEventListener("readystatechange", (event) => {
         }
 
         username.classList.toggle("md-up");
+
+        let usernav = document.querySelector(
+          "#content > div > div.container-fluid.profile-container > div > div.col-lg-8.col-md-8 > div.box > div.box-header.box-navbar > ul"
+        );
+
+        let olduser = document.querySelector(
+          "#content > div > div.container-fluid.profile-container > div > div.col-lg-8.col-md-8 > div.box > div.box-header.box-navbar > div.profile-header.mdl-component > div.hidden-sm-down > h1"
+        );
+        let userprofile = olduser.innerHTML.split(" ").shift();
+        const usernavnewListItem = document.createElement("li");
+        usernavnewListItem.classList.add("page-item", "nav-item");
+
+        const usernavnewLink = document.createElement("a");
+        usernavnewLink.href = "/dramalist/" + userprofile;
+        usernavnewLink.classList.add("nav-link");
+        usernavnewLink.textContent = "Watchlist";
+
+        usernavnewListItem.appendChild(usernavnewLink);
+
+        usernav.appendChild(usernavnewListItem);
       }
 
       let userProfile = document.querySelector(
