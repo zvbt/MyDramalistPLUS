@@ -1,6 +1,6 @@
 # MyDramaListPLUS
 
-MDL+ is a chrome extension to make [MyDramaList.com](https://mydramalist.com/) feels better to use.
+MDL+ is an extension to make [MyDramaList.com](https://mydramalist.com/) feels better to use.
 
 ## To-Do List
 
