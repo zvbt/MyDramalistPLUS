@@ -14,7 +14,7 @@ For Firefox click the image bellow or download the [.xpi](https://github.com/zvb
 
 - [x] My WatchList button on home page
 - [x] Check if user is logged in
-- [x] Check if user is using emglish version of the site
+- [x] Check if user is using english version of the site
 - [ ] Force darkmode
 - [ ] Open stream links
 
