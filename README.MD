@@ -4,7 +4,7 @@ MDL+ is an extension to make [MyDramaList.com](https://mydramalist.com/) feels b
 
 #
 
-For Chromium based browser download the [.crx](https://github.com/zvbt/MyDramalistPLUS/releases/latest) and import it in your browser.
+For Chromium based browser download this repo and import it in your browser.
 
 For Firefox click the image bellow or download the [.xpi](https://github.com/zvbt/MyDramalistPLUS/releases/latest) and import it in your browser.
 
