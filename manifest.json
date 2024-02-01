@@ -1,6 +1,6 @@
 {
   "name": "MyDramaListPlus",
-  "version": "1.0",
+  "version": "1.1",
   "author": "zvbt",
   "description": "MyDramaListPLUS. This project is still in early development if you encounter any bugs or errors please open an issue at https://github.com/zvbt/MyDramalistPLUS",
   "homepage_url": "https://github.com/zvbt/MyDramalistPLUS",
@@ -21,5 +21,6 @@
     	"id": "mdlp@akali.best",
     	"strict_min_version": "42.0"
   }
-}
+},
+  "host_permissions": ["*://*.mydramalist.com/"]
 }
