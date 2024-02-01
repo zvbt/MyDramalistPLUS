@@ -31,10 +31,10 @@ try {
 
         let olduser = document.querySelector("#content > div > div.container-fluid.profile-container > div > div.col-lg-8.col-md-8 > div.box > div.box-header.box-navbar > div.profile-header.mdl-component > div.hidden-sm-down > h1");
         let userprofile = olduser.innerHTML.split(" ").shift();
-        const usernavnewListItem = document.createElement("li");
+        let usernavnewListItem = document.createElement("li");
         usernavnewListItem.classList.add("page-item", "nav-item");
 
-        const usernavnewLink = document.createElement("a");
+        let usernavnewLink = document.createElement("a");
         usernavnewLink.href = "/dramalist/" + userprofile;
         usernavnewLink.classList.add("nav-link");
         usernavnewLink.textContent = "Watchlist";
@@ -46,15 +46,15 @@ try {
 
     let userProfile = document.querySelector("#app > div:nth-child(2) > div.app-header.navbar-xs.black.box-shadow > div > div > ul > li.nav-item.header-dropdown.mdl-dropdown.dropdown > div > div > a:nth-child(3)");
     let userLink = userProfile.href;
-    const userName = userLink.split("/").pop();
-    const newListItem = document.createElement("li");
+    let userName = userLink.split("/").pop();
+    let newListItem = document.createElement("li");
     newListItem.classList.add("nav-item", "dropdown");
 
-    const newLink = document.createElement("a");
+    let newLink = document.createElement("a");
     newLink.href = "/dramalist/" + userName;
     newLink.classList.add("nav-link");
 
-    const newSpan = document.createElement("span");
+    let newSpan = document.createElement("span");
     newSpan.classList.add("nav-text");
     newSpan.textContent = "My Watchlist";
 
@@ -62,9 +62,13 @@ try {
 
     newListItem.appendChild(newLink);
 
-    const navBar = document.querySelector("ul.nav.navbar-nav.pull-left.nav-active-border.b-blue");
+    let navBar = document.querySelector("ul.nav.navbar-nav.pull-left.nav-active-border.b-blue");
     navBar.appendChild(newListItem);
+
+
     
+
+
 } catch (error) {
     if (window.location.href === "https://mydramalist.com/signin") {
     } else {
@@ -77,11 +81,27 @@ let langAlert = "The extension MyDramaListPLUS is still in beta and work only wi
 
 function checklang() {
     window.location.href.match("https://fr.mydramalist.com") && (alert(langAlert), (window.location.href = "https://mydramalist.com/")),
-        window.location.href.match("https://es.mydramalist.com") && (alert(langAlert), (window.location.href = "https://mydramalist.com/")),
-        window.location.href.match("https://it.mydramalist.com") && (alert(langAlert), (window.location.href = "https://mydramalist.com/")),
-        window.location.href.match("https://nl.mydramalist.com") && (alert(langAlert), (window.location.href = "https://mydramalist.com/")),
-        window.location.href.match("https://pt.mydramalist.com") && (alert(langAlert), (window.location.href = "https://mydramalist.com/")),
-        window.location.href.match("https://br.mydramalist.com") && (alert(langAlert), (window.location.href = "https://mydramalist.com/")),
-        window.location.href.match("https://ro.mydramalist.com") && (alert(langAlert), (window.location.href = "https://mydramalist.com/"));
+    window.location.href.match("https://es.mydramalist.com") && (alert(langAlert), (window.location.href = "https://mydramalist.com/")),
+    window.location.href.match("https://it.mydramalist.com") && (alert(langAlert), (window.location.href = "https://mydramalist.com/")),
+    window.location.href.match("https://nl.mydramalist.com") && (alert(langAlert), (window.location.href = "https://mydramalist.com/")),
+    window.location.href.match("https://pt.mydramalist.com") && (alert(langAlert), (window.location.href = "https://mydramalist.com/")),
+    window.location.href.match("https://br.mydramalist.com") && (alert(langAlert), (window.location.href = "https://mydramalist.com/")),
+    window.location.href.match("https://ro.mydramalist.com") && (alert(langAlert), (window.location.href = "https://mydramalist.com/"));
 }
 checklang();
+
+
+
+
+let anchors = document.querySelectorAll('#content > div > div.container-fluid.title-container > div > div.col-lg-8.col-md-8.col-rightx > div:nth-child(3) > div.box-body.wts a');
+Array.from(anchors).forEach(function(anchor) {
+
+    let currentHref = anchor.getAttribute('href');
+    let cleanedHref = currentHref.replace(/\/redirect\?q=/, '');
+    let cleanedHref2 = cleanedHref.split('&')[0];
+    let link = decodeURIComponent(cleanedHref2);
+
+    anchor.setAttribute('href', link);
+    anchor.setAttribute('target', '_blank');
+    console.log('[MDL+] Cleared urls: ' + link);
+});
