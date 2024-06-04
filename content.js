@@ -5,15 +5,12 @@ try {
     let location = window.location.href;
 
     //mdl+ tag
-    if (location.match('https://mydramalist.com/profile/Cyadine')) {
-        let cyadine = document.querySelector(
-            '#content > div > div.container-fluid.profile-container > div > div.col-lg-8.col-md-8 > div.box > div.box-header.box-navbar > div.profile-header.mdl-component > div.row.no-gutter > div.col-xs-8.col-sm-8 > h1 > span'
-        );
-
-    cyadine.innerHTML = `<span style="font-size: 18px;cursor: pointer;background-color: #6b03fc;color: hsla(0,0%,100%,0.87);padding: 2px 4px;text-align: center;border-radius: 5px;" onClick='window.open("https://github.com/zvbt/MyDramalistPLUS", "_blank");'>MDL+</span>`;    }
-
+ /*   if (location.match('https://mydramalist.com/profile/Cyadine')) {
+        let cyadine = document.querySelector("#content > div > div.container-fluid.profile-container > div > div.col-lg-8.col-md-8 > div.box > div.box-header.box-navbar > div.profile-header.mdl-component > div.hidden-sm-down > h1")
+    cyadine.innerHTML = `<span style="font-size: 18px;cursor: pointer;background-color: #6b03fc;color: hsla(0,0%,100%,0.87);padding: 2px 4px;text-align: center;border-radius: 5px;" onClick='window.open("https://github.com/zvbt/MyDramalistPLUS", "_blank");'>MDL+</span>`;}
+*/
     //remove hidden-md-up
-    if (location.match('https://mydramalist.com/profile/')) {
+ /*   if (location.match('https://mydramalist.com/profile/')) {
         let username = document.querySelector('#content > div > div.container-fluid.profile-container > div > div.col-lg-8.col-md-8 > div.box > div.box-header.box-navbar > div.profile-header.mdl-component > div.row.no-gutter.hidden-md-up');
 
         username.classList.add('md-up');
@@ -42,7 +39,7 @@ try {
 
         usernav.appendChild(usernavnewListItem);
     }
-
+*/
     let userProfile = document.querySelector('#app > div:nth-child(2) > div.app-header.navbar-xs.black.box-shadow > div > div > ul > li.nav-item.header-dropdown.mdl-dropdown.dropdown > div > div > a:nth-child(3)');
     let userLink = userProfile.href;
     let userName = userLink.split('/').pop();
